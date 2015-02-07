@@ -1,2 +1,4 @@
 # GitHub-Search 
-A work-in-progress based off of http://learn.adicu.com/webdev/
+
+A work-in-progress based off of several tutorials:
+http://learn.adicu.com/webdev/
