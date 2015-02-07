@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+<!-- search.html -->
+{% block title %}Search | Has it Been Made Yet?{% endblock %}
+
+{% block body %}
+<div class="row">
+  <div class="large-12 columns">
+    <div class="panel">
+      <h1>Search</h1>
+		<form action="/search" method="post">
+		  <div class="row">
+		  	<!--Note Foundation is responsive to screen size, so small-->
+		    <div class="small-10 columns">
+		      <input type="text" placeholder="Search for your idea" name="user_search" required/>
+		    </div>
+		    <!--Button is at a 10:2 ratio with search box-->
+		    <div class="small-2 columns">
+		    	<!--postfix class changes button height to the search box height-->
+		    	<button class="postfix" type="submit">Search</button>
+		    </div>
+		  </div>
+		</form>
+      {% block results %}{% endblock %}
+    </div>
+  </div>
+</div>
+{% endblock %}
