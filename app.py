@@ -20,6 +20,7 @@ def search():
     else: # when request.method == "GET"
         return render_template("search.html")
 
+# To catch errors
 @app.errorhandler(404)
 def page_not_found(error):
     return "Sorry, this page was not found.", 404
